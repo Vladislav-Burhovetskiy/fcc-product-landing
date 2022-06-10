@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <title>Apple | Products</title>
 </head>
+
 <body>
     <header id="header" class="header">
         <div class="container header__container">
@@ -17,33 +19,66 @@
                 </a>
             </div>
             <nav id="nav-bar">
-                <a class="nav-link" href="#ipad">iPad</a>
-                <a class="nav-link" href="http://">iPhone</a>
+                <a class="nav-link" href="#airpods">AirPods</a>
                 <a class="nav-link" href="#macbook">MacBook</a>
-                <a class="nav-link" href="http://">iWatch</a>
+                <a class="nav-link" href="#iphone">iPhone</a>
             </nav>
         </div>
     </header>
-    <body>
-        <main>
-            <section id="ipad"" class="ipad"></section>
-            <section id="macbook">
-                <div class="video">
-                    <iframe 
-                        id="video"
-                        width="560" 
-                        height="315" 
-                        src="https://www.youtube.com/embed/jwmS1gc9S5A?controls=0" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </section>
-        </main>
-    </body>
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" ></script>
+    <main class="main container">
+        <section id="airpods" class="main__airpods">
+            <h2 class="main__title">
+                AirPods Pro
+            </h2>
+            <div class="main__airpods-container">
+                <img class="main__airpods-image" src="img/airpods_pro_left.png" alt="AirPods Left">
+                <img class="main__airpods-image" src="img/airpods_pro_right.png" alt="AirPods Right">
+            </div>
+        </section>
+        <section id="macbook" class="main__makbook">
+            <div class="video main__makbook-video">
+                <h2 class="main__makbook-text">
+                    The new MacBook
+                </h2>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/jwmS1gc9S5A?controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <section id="iphone" class="main__iphone">
+            <h2 class="main__title">
+                iPhone
+            </h2>
+            <p class="main__text">
+                Вибачте за незручність, усі iPhons у світі куплені!
+            </p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <fieldset>
+                    <legend>
+                        Заповніть цю форму, щоб зв`язатись з нами:
+                    </legend>
+                        <input id="first-name" type="text" name="Name" placeholder="Name">                                        
+                        <input id="email" type="email" name="email" placeholder="Email">
+                    <button id="submit" type="submit" value="Submit">
+                        Надіслати
+                    </button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">
+                © Apple Inc., 2022 р. Усі права захищено.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
